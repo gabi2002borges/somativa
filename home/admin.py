@@ -4,4 +4,5 @@ from .models import Medico
 
 @admin.register(Medico)
 class detMedico(admin.ModelAdmin):
-    list_display = ('id', 'nome', 'crm', 'especialidade', 'foto')
+    list_display = ('id', 'nome', 'crm', 'especialidade', 'foto', 'mostrar')
+

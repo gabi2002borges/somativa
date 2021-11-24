@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+{% block conteudo %}
+<form action="{% url 'cadastro' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+    <button class="btn btn-success" type="submit">Enviar</button>
+    {% endbuttons %}
+</form>
+{% include 'footer.html' %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+{% block conteudo %}
+<div id="coluna1" style="width: auto; height: 100%; float: left; margin-left: 15px; align-items: center;">
+    <img src="{% static 'img/logo-hospital.png' %}" style="height: 700px;">
+</div>
+<div id="coluna2" style="width: auto; height: 100%; float: left; text-align: right;">
+
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}
